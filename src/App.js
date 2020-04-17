@@ -32,9 +32,9 @@ function App() {
       {isLoading ? (
         <h1 className="text-3xl text-center">Loading...</h1>
       ) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 sm:bg-red">
           {images.map((item) => (
-            <ImageCard key={item.id} images={item} />
+            <a href={`${item.pageURL}`}><ImageCard key={item.id} images={item} /></a>
           ))}
         </div>
       )}
