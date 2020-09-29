@@ -4,7 +4,7 @@ const ImageCard = (props) => {
   const tags = props.images.tags.split(",");
   return (
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
-      <img class="w-full" src={`${props.images.webformatURL}`} />
+      <img class="w-full" src={`${props.images.webformatURL}`} alt="image" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">Photo by {props.images.user}</div>
         <ul class="text-gray-700 text-base">

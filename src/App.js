@@ -9,7 +9,7 @@ function App() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(true); 
 
     axios
       .get(
